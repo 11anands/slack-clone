@@ -10,7 +10,7 @@ import Messages from '../Messages/Messages.component';
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import db from '../../firebase';
-import { Message } from '@material-ui/icons';
+// import { Message } from '@material-ui/icons';
 
 function Chat() {
     const { roomId } = useParams();
@@ -19,8 +19,10 @@ function Chat() {
 
     useEffect(() => {
         if (roomId) {
-            db.collection('room').doc(roomId).onSnapshot(snapshot => (
-                setRoomDetails(snapshot.data())
+            db.collection('room')
+                .doc(roomId)
+                .onSnapshot(snapshot => (
+                    setRoomDetails(snapshot.data())
             ));
         }
 

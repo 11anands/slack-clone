@@ -1,12 +1,17 @@
+// Importing React Files
 import React from 'react';
+
+// Importing Project Files
 import './Messages.component.css';
+
 
 function Messages({ message, timestamp, user, userImage}) {
     return (
         <div className="message">
-            <img src={ userImage } alt=""/>
+            
             <div className="message__info">
                 <h4>
+                    <img src={ userImage } alt=""/>
                     {user} timestamp...
                 </h4>
                 <p>
