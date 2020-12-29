@@ -1,6 +1,10 @@
+// Importing Core React Module
 import React from 'react';
+
+// Importing Project Directory File
 import './css/SidebarOption.component.css';
 
+// Initializing the SidebarOption component
 function SidebarOption({Icon, title}) {
     return (
         <div className="sidebaroption">
@@ -10,4 +14,5 @@ function SidebarOption({Icon, title}) {
     );
 };
 
+// Exporting the SidebarOption Component
 export default SidebarOption;

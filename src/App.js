@@ -1,7 +1,9 @@
+// Importing the Project Directory Files
 import './App.css';
 import Header from './components/Header.component';
 import Sidebar from './components/Sidebar.component';
 
+// Initializing the application
 function App() {
   return (
     // BEM Naming Convention
@@ -16,4 +18,5 @@ function App() {
   );
 }
 
+// Exporting the application
 export default App;

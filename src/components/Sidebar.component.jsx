@@ -1,5 +1,10 @@
+// Importing Core React Module
 import React from 'react';
+
+// Importing Project Directory File
 import './css/Sidebar.component.css';
+
+// Importing Third Party Modules
 import SidebarOption  from './SidebarOption.component';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CreateIcon from '@material-ui/icons/Create';
@@ -12,7 +17,9 @@ import AppsIcon from '@material-ui/icons/Apps';
 import FileCopyIcon from '@material-ui/icons/FileCopy';
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import AddIcon from '@material-ui/icons/Add';
 
+// Initializing the Sidebar component
 function Sidebar() {
     return (
         <div className='sidebar'>
@@ -26,6 +33,8 @@ function Sidebar() {
                 </div> 
                 <CreateIcon />
             </div>
+            {/* Adding SidebarOption component 
+                which we hav created */}
             <SidebarOption Icon={InsertCommentIcon} title={"Threads"}/>
             <SidebarOption Icon={InboxIcon} title={"Mention & Reactions"}/>
             <SidebarOption Icon={DraftIcon} title={"Saved Items"}/>
@@ -36,8 +45,14 @@ function Sidebar() {
             <SidebarOption Icon={ExpandLessIcon} title={"Show Less"}/>
             <hr/>
             <SidebarOption Icon={ExpandMoreIcon} title={"Channels"}/>
+            <hr/>
+            <SidebarOption Icon={AddIcon} title={"Add Channel"}/>
+
+            {/* Connect to dB and list all the channels */}
+            {/* SidebarOption...mapping */}
         </div>
     )
 }
 
-export default Sidebar
+// Exporting the Sidebar component
+export default Sidebar;

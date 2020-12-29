@@ -1,10 +1,16 @@
+// Importing Core React Module
 import React from 'react';
+
+// Importing Project Directory File
 import './css/Header.component.css';
+
+// Importing Third Party Modules
 import { Avatar } from '@material-ui/core';
 import AccessTimeIcon from '@material-ui/icons/AccessTimeRounded';
 import SearchIcon from '@material-ui/icons/Search';
 import HelpOutlineIcon from '@material-ui/icons/HelpOutline'
 
+// Initializing the Header component
 function Header() {
     return (
         <div className="header">
@@ -27,4 +33,5 @@ function Header() {
     );
 };
 
+// Exporting the Header Component
 export default Header;
