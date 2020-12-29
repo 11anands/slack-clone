@@ -2,11 +2,11 @@
 import React, { useState, useEffect } from 'react';
 
 // Importing Project Directory File
-import './css/Sidebar.component.css';
-import db from '../firebase';
+import './Sidebar.component.css';
+import SidebarOption from '../SidebarOption/SidebarOption.component';
+import db from '../../firebase';
 
 // Importing Third Party Modules
-import SidebarOption  from './SidebarOption.component';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CreateIcon from '@material-ui/icons/Create';
 import InsertCommentIcon from '@material-ui/icons/InsertComment';

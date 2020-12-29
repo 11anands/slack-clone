@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Importing Project Directory File
-import './css/Header.component.css';
+import './Header.component.css';
 
 // Importing Third Party Modules
 import { Avatar } from '@material-ui/core';

@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Importing Project Directory File
-import './css/SidebarOption.component.css';
+import './SidebarOption.component.css';
 
 // Initializing the SidebarOption component
 function SidebarOption({Icon, title}) {
