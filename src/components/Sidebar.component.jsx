@@ -37,6 +37,7 @@ function Sidebar() {
             <hr/>
             <SidebarOption Icon={ExpandMoreIcon} title={"Channels"}/>
         </div>
+        1.23.26
     )
 }
 
