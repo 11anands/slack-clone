@@ -1,5 +1,5 @@
 import React from 'react';
-import './Sidebar.component.css';
+import './css/Sidebar.component.css';
 import SidebarOption  from './SidebarOption.component';
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CreateIcon from '@material-ui/icons/Create';
@@ -37,7 +37,6 @@ function Sidebar() {
             <hr/>
             <SidebarOption Icon={ExpandMoreIcon} title={"Channels"}/>
         </div>
-        1.23.26
     )
 }
 

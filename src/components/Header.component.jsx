@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.component.css';
+import './css/Header.component.css';
 import { Avatar } from '@material-ui/core';
 import AccessTimeIcon from '@material-ui/icons/AccessTimeRounded';
 import SearchIcon from '@material-ui/icons/Search';
