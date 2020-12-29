@@ -2,7 +2,7 @@
 import firebase from 'firebase';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+const firebaseConfig = {    
     apiKey: "AIzaSyAIcU5rsxJDLGVVkeaGBt5vxJ9UqZ9aOcc",
     authDomain: "slack-clone-317e8.firebaseapp.com",
     projectId: "slack-clone-317e8",
@@ -12,7 +12,7 @@ const firebaseConfig = {
     measurementId: "G-3PPXVJ3T84"
 };
 
-// Intitialize all the database
+// Intitialize all the database files
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
