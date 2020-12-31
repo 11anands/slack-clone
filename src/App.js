@@ -1,4 +1,5 @@
 // Importing React Files
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 // Importing the Project Directory Files
@@ -9,23 +10,32 @@ import Chat from './components/Chat/Chat.component';
 
 // Initializing the application
 function App() {
+  const [user, setUser] = useState(null);
+
   return (
     // BEM Naming Convention
     <div className="App">
       <Router>
-        <Header />
-        <div className="app__body">
-          <Sidebar />
-          <Switch>
-            <Route path="/room/:roomId">
-              <Chat />
-            </Route>
-            <Route path="/">
-              <h1>Hello</h1>
-            </Route>
-          </Switch>
-          {/* React-Router -> Chat Screen*/}
-        </div>
+        {!user? (
+          <h1>Login page</h1>
+        ):(
+          <>
+            <Header />
+            <div className="app__body">
+              <Sidebar />
+              <Switch>
+                <Route path="/room/:roomId">
+                  <Chat />
+                </Route>
+                <Route path="/">
+                  <h1>Hello</h1>
+                </Route>
+              </Switch>
+              {/* React-Router -> Chat Screen*/}
+            </div>
+          </>
+        )}
+        
       </Router>
       
     </div>
