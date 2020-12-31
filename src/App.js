@@ -7,6 +7,7 @@ import './App.css';
 import Header from './components/Header/Header.component';
 import Sidebar from './components/Sidebar/Sidebar.component';
 import Chat from './components/Chat/Chat.component';  
+import Login from './components/Login/Login.component';
 
 // Initializing the application
 function App() {
@@ -17,7 +18,7 @@ function App() {
     <div className="App">
       <Router>
         {!user? (
-          <h1>Login page</h1>
+          <Login />
         ):(
           <>
             <Header />
