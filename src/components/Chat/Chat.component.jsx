@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 // Importing Project Files
 import './Chat.component.css';
 import Messages from '../Messages/Messages.component';
+import ChatInput from "../ChatInput/ChatInput.component";
 
 // Importing Third Party Modules
 import StarBorderOutlinedIcon from "@material-ui/icons/StarBorderOutlined";
@@ -61,6 +62,7 @@ function Chat() {
                         />
                     ))}
                 </div>
+                <ChatInput channelName = {roomDetails?.name} channelId={roomDetails?.roomId}/>
             </div>
     )
 }

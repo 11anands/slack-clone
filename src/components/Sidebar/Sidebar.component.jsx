@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import './Sidebar.component.css';
 import SidebarOption from '../SidebarOption/SidebarOption.component';
 import db from '../../firebase';
+import { useStateValue } from '../../StateProvider'
 
 // Importing Third Party Modules
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
@@ -22,6 +23,7 @@ import AddIcon from '@material-ui/icons/Add';
 
 // Initializing the Sidebar component
 function Sidebar() {
+    const [{ user }] = useStateValue();
     const [channels, setChannels] = useState([]);
     useEffect(() => {
         db.collection('room').onSnapshot(snapshot => (
@@ -39,7 +41,7 @@ function Sidebar() {
                     <h2>11anands</h2>
                     <h3>
                         <FiberManualRecordIcon />
-                        Anand Sharan
+                        {user?.displayName}
                     </h3>
                 </div> 
                 <CreateIcon />

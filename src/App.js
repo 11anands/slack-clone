@@ -1,5 +1,5 @@
 // Importing React Files
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 // Importing the Project Directory Files
@@ -8,10 +8,11 @@ import Header from './components/Header/Header.component';
 import Sidebar from './components/Sidebar/Sidebar.component';
 import Chat from './components/Chat/Chat.component';  
 import Login from './components/Login/Login.component';
+import { useStateValue } from "./StateProvider";
 
 // Initializing the application
 function App() {
-  const [user, setUser] = useState(null);
+  const [{user}, dispatch] = useStateValue();
 
   return (
     // BEM Naming Convention
